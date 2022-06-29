@@ -1,6 +1,6 @@
 ﻿//Задача №2
 
-Console.WriteLine("Введите два числа:");
+/*Console.WriteLine("Введите два числа:");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 int max = 0;
@@ -71,7 +71,5 @@ while (index <= number)
     Console.Write(index);
     }
     index++;
-}
-
-
+}*/
 
