@@ -1,4 +1,4 @@
-﻿//Задача 9
+﻿//Задача 10
 
 /*Console.WriteLine("Введите трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -23,7 +23,7 @@ else
 }*/
 
 
-/*Console.WriteLine("Введите число:");
+Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 string str = Convert.ToString(number);
 if (number > 99)
@@ -33,16 +33,11 @@ if (number > 99)
 else
 {
     Console.WriteLine("Нет третьего числа!");
-}*/
+}
 
 
 
-
-
-
-
-
-
+/*Задача 13
 
 Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -91,7 +86,7 @@ if (number <= 99999999)
     break;
 }
 
-}    
+}    */
 
 
 
