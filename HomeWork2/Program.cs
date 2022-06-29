@@ -2,7 +2,7 @@
 
 /*Console.WriteLine("Введите трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
-int num = (number % 100) % 10;
+int num = (number % 10) % 10;
 Console.WriteLine(num);*/
 
 
@@ -23,7 +23,7 @@ else
 }*/
 
 
-Console.WriteLine("Введите число:");
+/*Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 string str = Convert.ToString(number);
 if (number > 99)
@@ -33,11 +33,65 @@ if (number > 99)
 else
 {
     Console.WriteLine("Нет третьего числа!");
+}*/
+
+
+
+
+
+
+
+
+
+
+Console.WriteLine("Введите число:");
+int number = Convert.ToInt32(Console.ReadLine());
+
+while (true)
+{
+if (number <= 99)
+{
+    Console.WriteLine("Нет третьего числа!");
+    break;
+}
+if (number <= 999)
+{
+    number = number % 10;
+    Console.WriteLine(number);
+    break;
+}
+if (number <= 9999)
+{
+    number = (number / 10) % 10;
+    Console.WriteLine(number);
+    break;
+}
+if (number <= 99999)
+{
+    number = (number / 100) % 10;
+    Console.WriteLine(number);
+    break;
+}
+if (number <= 999999)
+{
+    number = (number / 1000) % 10;
+    Console.WriteLine(number);
+    break;
+}
+if (number <= 9999999)
+{
+    number = (number / 10000) % 10;
+    Console.WriteLine(number);
+    break;
+}
+if (number <= 99999999)
+{
+    number = (number / 100000) % 10;
+    Console.WriteLine(number);
+    break;
 }
 
-
-
-
+}    
 
 
 
