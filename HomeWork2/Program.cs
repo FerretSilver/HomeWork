@@ -91,7 +91,7 @@ if (number < 1000000000)
     Console.WriteLine(number);
     break;
 }
-if (number < 2147483647)
+if (number < 2147483648)
 {
     number = (number / 10000000) % 10;
     Console.WriteLine(number);
