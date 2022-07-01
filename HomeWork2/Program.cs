@@ -22,7 +22,7 @@ else
     Console.WriteLine("Нет!");
 }*/
 
-
+//Задача 13
 /*Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 string str = Convert.ToString(number);
