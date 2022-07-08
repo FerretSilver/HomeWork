@@ -39,7 +39,7 @@ else
 
 //Задача 13
 
-Console.WriteLine("Введите число:");
+/*Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
 while (true)
@@ -98,7 +98,7 @@ if (number < 2147483648)
     break;
 }
 
-}    
+}    */
 
 
 
