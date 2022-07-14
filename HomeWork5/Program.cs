@@ -75,7 +75,7 @@ void PrintArray(int[] array)
 }*/
 //Задача 38: Задайте массив вещественных, дробных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-double[] numbers = new double[10];
+/*double[] numbers = new double[10];
 double maxValue = numbers[0];
 
 
@@ -125,4 +125,4 @@ void PrintArray (double[] array)
   }
   Console.WriteLine();
   Console.WriteLine();
-}
+}*/
