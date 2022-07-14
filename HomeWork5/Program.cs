@@ -75,8 +75,9 @@ void PrintArray(int[] array)
 }*/
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-/*double[] numbers = new double[10];
+double[] numbers = new double[10];
 double maxValue = numbers[0];
+
 
 
 FillArray(numbers);
@@ -101,11 +102,12 @@ for(int i = 0; i < numbers.Length; i++)
 double diffrence = maxValue - minValue;
 
 
-Console.WriteLine($"Максимальный элемент: {maxValue}");
+Console.WriteLine($"Максимальный элемент: {Math.Round(maxValue, 2)}");
 Console.WriteLine();
-Console.WriteLine($"Минимальный элемент: {minValue}");
+Console.WriteLine($"Минимальный элемент: {Math.Round(minValue, 2)}");
 Console.WriteLine();
 Console.WriteLine($"Разница между максимальным и минимальным элементом: {diffrence}");
+
 
 void FillArray(double[] array)
 {
@@ -115,12 +117,12 @@ void FillArray(double[] array)
   }
 }
 
-void PrintArray(double[] array)
+void PrintArray (double[] array)
 {
   for(int i = 0; i < array.Length; i++)
   {
-    Console.Write(array[i] + " ");
+    Console.Write(Math.Round(array[i], 2) + " ");
   }
   Console.WriteLine();
   Console.WriteLine();
-}*/
+}
