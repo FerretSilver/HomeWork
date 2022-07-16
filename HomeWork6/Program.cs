@@ -97,9 +97,10 @@ Console.WriteLine("Введено чисел больше нуля: " + Selectio
 
 
 //Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+//Эту задачу тоже разбирали на семинаре. Здесь я бы не решил уравнение(недостаток знаний).
 
-/*
-double k1 = InputInt("k1 = ");
+
+/*double k1 = InputInt("k1 = ");
 double b1 = InputInt("b1 = ");
 double k2 = InputInt("k2 = ");
 double b2 = InputInt("b2 = ");
@@ -110,7 +111,7 @@ if(k1 == k2)
     return;
 }
 
-double x = (b2 - b1) / (k1 - k2);
+double x = (b1 - b2) / (k1 - k2);
 double y = k1 * x + b1;
 Console.WriteLine($"Точка пересечения равна [{x}, {y}]");
 
@@ -119,4 +120,5 @@ double InputInt(string output)
     Console.Write(output);
     return Convert.ToDouble(Console.ReadLine());
 }*/
+
 
