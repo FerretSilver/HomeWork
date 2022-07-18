@@ -41,31 +41,18 @@ int row = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите индекс столбца:" );
 int column = Convert.ToInt32(Console.ReadLine());
 int [,] myArray = new int [10, 10];
-
-
-
-
-
-
 FillArray(myArray);
 PrintArray(myArray);
-Console.WriteLine(myArray[row, column]);
-
-if(row > 9 || column > 9)
+Fools(myArray);
+Console.WriteLine($"Значение ячейки:  {myArray[row, column]}");
+void Fools(int[,] array)
 {
-    Console.WriteLine("Такого индекса нет!");
+    if (row < 0 || row > 9 | column < 0 || column > 9)
+    {           
+        Console.WriteLine("Такого элемента нет!");
+    }
+    return; 
 }
-return;
-
-
-
-
-
-
-
-
-
-
 
 
 void FillArray(int[,] array)
@@ -86,6 +73,7 @@ void PrintArray(int[,] array)
         {
             Console.Write(array[i, j] + " ");
         }
+        
         Console.WriteLine();
     }
     Console.WriteLine();
