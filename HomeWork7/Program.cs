@@ -38,7 +38,7 @@
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 // Во вводе первая цифра - номер строки, вторая - столбца. Цифры не больше 9.
 
-/*Console.WriteLine("Введите количество строк:");
+Console.WriteLine("Введите количество строк:");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов:");
 int columns = Convert.ToInt32(Console.ReadLine());
@@ -51,20 +51,32 @@ int [,] myArray = new int [rows, columns];
 
 FillArray(myArray);
 PrintArray(myArray);
+Fools(myArray);
 Console.WriteLine();
 Console.WriteLine(myArray[row, column]);
 Console.WriteLine();
 
+void Fools(int[,] array)
+{
+    while (row < array.GetLength(0) | column < array.GetLength(1))
+    {
+        Console.WriteLine("Такого индекса нет!");
+        break;
+    }
+    return;
+}
 
-if(row  > rows)
+
+
+/*if(rows < row)
 {
     Console.WriteLine($"Такого индекса {row} строки нет!");
 }
-if(column  > columns)
+if(columns  < column)
 {
     Console.WriteLine($"Такого индекса {column} столбца нет!");
 }
-return;
+return;*/
 
 void FillArray(int[,] array)
 {
@@ -87,7 +99,7 @@ void PrintArray(int[,] array)
         Console.WriteLine();
     }
     Console.WriteLine();
-}*/
+}
 
 
 
