@@ -37,8 +37,8 @@
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 // Во вводе первая цифра - номер строки, вторая - столбца. Цифры не больше 9.
-/*
-Console.WriteLine("Введите количество строк:");
+
+/*Console.WriteLine("Введите количество строк:");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов:");
 int columns = Convert.ToInt32(Console.ReadLine());
@@ -51,14 +51,20 @@ int [,] myArray = new int [rows, columns];
 
 FillArray(myArray);
 PrintArray(myArray);
+Console.WriteLine();
 Console.WriteLine(myArray[row, column]);
+Console.WriteLine();
 
-if(row > rows || column > columns)
+
+if(row  > rows)
 {
-    Console.WriteLine("Такого индекса нет!");
+    Console.WriteLine($"Такого индекса {row} строки нет!");
+}
+if(column  > columns)
+{
+    Console.WriteLine($"Такого индекса {column} столбца нет!");
 }
 return;
-
 
 void FillArray(int[,] array)
 {
@@ -81,8 +87,8 @@ void PrintArray(int[,] array)
         Console.WriteLine();
     }
     Console.WriteLine();
-}
-*/
+}*/
+
 
 
 //Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
