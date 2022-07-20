@@ -52,10 +52,11 @@ int [,] myArray = new int [rows, columns];
 
 
 FillArray(myArray);
+Console.WriteLine();
 PrintArray(myArray);
 Console.WriteLine();
 
-if (myArray.GetLength(0) < row || myArray.GetLength(1) < column)
+if (myArray.GetLength(0) <= row || myArray.GetLength(1) <= column)
 {
     Console.WriteLine("Такого индекса нет!");
     return;        
