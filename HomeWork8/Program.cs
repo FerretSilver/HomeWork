@@ -62,8 +62,6 @@ void PrintArray(int[,] array)
 
 /*int [,] myArray = new int [4, 5];
 
-
-
 FillArray(myArray);
 PrintArray(myArray);
 SumArray(myArray);
@@ -128,6 +126,72 @@ void FillArray(int [,] array)
     for (int j = 0; j < array.GetLength(1); j++)
     {
       myArray[i, j] = new Random().Next(1, 10);
+    }
+  }
+}*/
+
+//Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+
+
+
+/*int[,] firstMatrix = new int[4, 4];
+int[,] secondMatrix = new int[4, 4];
+int[,] multiplicationMatrix = new int[4,4];
+
+
+FillArray(firstMatrix);
+Console.WriteLine();
+FillArray(secondMatrix);
+Console.WriteLine();
+PrintArray(firstMatrix);
+Console.WriteLine();
+PrintArray(secondMatrix);
+Console.WriteLine();
+MultiplicationArray(firstMatrix, secondMatrix, multiplicationMatrix);
+PrintMultiplicationArray(multiplicationMatrix);
+
+
+
+
+void MultiplicationArray(int[,] array, int[,] array2, int[,] multiplicationArray)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      multiplicationArray[i, j] = array[i, j] * array2[i, j];
+    }
+  }
+}
+void PrintMultiplicationArray(int[,] multiplicationArray)
+{
+  for (int i = 0; i < multiplicationArray.GetLength(0); i++)
+  {
+    for (int j = 0; j < multiplicationArray.GetLength(1); j++)
+    {
+      Console.Write($"{multiplicationArray[i, j] + " "}");
+    }
+    Console.WriteLine();
+  }
+}
+void PrintArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      Console.Write(array[i, j] + " ");
+    }
+    Console.WriteLine();
+  }
+}
+void FillArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      array[i, j] = new Random().Next(1, 10);
     }
   }
 }*/
