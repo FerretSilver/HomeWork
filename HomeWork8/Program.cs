@@ -238,3 +238,56 @@ void PrintArray(int[,,] array)
   }
     Console.WriteLine();
 }*/
+
+
+//Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет
+//построчно выводить массив, добавляя индексы каждого элемента.
+//массив размером 2 x 2 x 1
+//Не знаю правильно ли я понял задание. Но пример работает только если массив размером 2*1*2.
+
+/*int x = ReadNumber("Введите число X: ");
+int y = ReadNumber("Введите число Y: ");
+int z = ReadNumber("Введите число Z: ");
+int[,,] myArray = new int[x, y, z];
+
+FillArray(myArray);
+PrintArray(myArray);
+
+int ReadNumber(string input)
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
+void FillArray(int[,,] array)
+{
+  
+  for (int i = 0; i < array.GetLength(0); i++)
+  {    
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      for (int k = 0; k < array.GetLength(2); k++)
+      {
+        array[i, j, k] = new Random().Next(10 , 99);
+      }
+    }
+  }
+  
+}
+void PrintArray(int[,,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {    
+    Console.WriteLine($"Таблица трехмерного массива: {i + 1}");
+    for (int j = 0; j < array.GetLength(1); j++)
+    {      
+      for (int k = 0; k < array.GetLength(2); k++)
+      {
+        Console.Write($"{array[i, j, k]} ({i},{j},{k}) ");
+      }
+      Console.WriteLine();
+    }       
+  }
+    Console.WriteLine();
+}*/
