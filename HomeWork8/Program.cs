@@ -208,8 +208,8 @@ void FillArray(int[,] array)
 int y = ReadNumber("Введите число Y: ");
 int z = ReadNumber("Введите число Z: ");
 int[,,] myArray = new int[x, y, z];
-
 FillArray(myArray);
+//FillArray(myArray);
 PrintArray(myArray);
 
 int ReadNumber(string input)
@@ -219,21 +219,7 @@ int ReadNumber(string input)
   return output;
 }
 
-void FillArray(int[,,] array)
-{
-  
-  for (int i = 0; i < array.GetLength(0); i++)
-  {    
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-      for (int k = 0; k < array.GetLength(2); k++)
-      {
-        array[i, j, k] = new Random().Next(10 , 99);
-      }
-    }
-  }
-  
-}
+
 void PrintArray(int[,,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
@@ -249,4 +235,84 @@ void PrintArray(int[,,] array)
     }       
   }
     Console.WriteLine();
+}
+void FillArray(int[,,] array)
+{
+  int[] temp = new int[array.GetLength(0) * array.GetLength(1) * array.GetLength(2)];
+  int  number;
+  for (int i = 0; i < temp.GetLength(0); i++)
+  {
+    temp[i] = new Random().Next(10, 100);
+    number = temp[i];
+    if (i >= 1)
+    {
+      for (int j = 0; j < i; j++)
+      {
+        while (temp[i] == temp[j])
+        {
+          temp[i] = new Random().Next(10, 100);
+          j = 0;
+          number = temp[i];
+        }
+          number = temp[i];
+      }
+    }
+  }
+  int count = 0; 
+  for (int x = 0; x < array.GetLength(0); x++)
+  {
+    for (int y = 0; y < array.GetLength(1); y++)
+    {
+      for (int z = 0; z < array.GetLength(2); z++)
+      {
+        array[x, y, z] = temp[count];
+        count++;
+      }
+    }
+  }
 }*/
+
+
+//Задача 62. Заполните спирально массив 4 на 4. Задачу разбирали на уроке.
+
+
+/*Console.WriteLine("Введите размер равностророннего двумерноего массива:");
+int size = Convert.ToInt32(Console.ReadLine());
+int[,] array = new int[size, size];
+Console.WriteLine();
+
+Spiral(array);
+PrintArray(array);
+
+void Spiral(int[,] array)
+{
+  int value = 1;
+  int i = 0;
+  int j = 0;
+  while(value <= size * size)
+  {
+      array[i, j] = value;
+      if (i <= j +1 && i + j < size -1)
+        ++j;
+      else if (i < j && i + j >= size - 1)
+        ++i;
+      else if (i >= j && i + j > size - 1)
+        --j;
+      else
+        --i;      
+      value++;  
+  }   
+}
+void PrintArray(int[,] array)
+{
+  for (int k = 0; k < array.GetLength(0); k++)
+  {
+    for (int l = 0; l < array.GetLength(1); l++)
+    {
+      Console.Write(array[k, l] + " ");
+    }
+    Console.WriteLine();
+  }
+}*/
+
+
