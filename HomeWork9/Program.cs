@@ -30,24 +30,12 @@ int InputNumbers(string input)
 int n = InputNumbers("Введите n: ");
 int temp = m;
 
-if (m > n) 
+int Sum(int m, int n)
 {
-  m = n; 
-  n = temp;
+    if (n == m) return n;
+    return m + Sum(m + 1, n);
 }
-
-PrintSumm(m, n, temp=0);
-
-void PrintSumm(int m, int n, int sum)
-{
-  sum = sum + n;
-  if (n <= m)
-  {
-    Console.WriteLine($"Сумма значений элементов= {sum} ");
-    return;
-  }
-  PrintSumm(m, n - 1, sum);
-}
+Console.WriteLine(Sum(m, n));
 
 int InputNumbers(string input) 
 {
