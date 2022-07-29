@@ -8,11 +8,12 @@ int n = InputNumbers("Введите N: ");
 
 PrintNumber(m, n);
 
-void PrintNumber(int i, int j)
+void PrintNumber(int m, int n)
 {
-    if (j < i) return;
-    PrintNumber(i, j - 1);
-    Console.WriteLine(j + " ");
+    if (n < m)
+    return;
+    PrintNumber(m, n - 1);
+    Console.Write($"{n},");
 }
 int InputNumbers(string input) 
 {
@@ -28,14 +29,14 @@ int InputNumbers(string input)
 
 /*int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
-int temp = m;
+
 
 int Sum(int m, int n)
 {
     if (n == m) return n;
     return m + Sum(m + 1, n);
 }
-Console.WriteLine(Sum(m, n));
+Console.WriteLine($"Сумма значений элементов = {Sum(m, n)}");
 
 int InputNumbers(string input) 
 {
